@@ -1,0 +1,9 @@
+.DS_Store
+.openai/
+.vercel/
+.env
+.env.*
+__pycache__/
+*.pyc
+deployment-files.json
+vercel-deployment.json

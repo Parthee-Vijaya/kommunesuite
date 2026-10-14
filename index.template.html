@@ -1,0 +1,93 @@
+<!doctype html>
+<!-- SPDX-License-Identifier: EUPL-1.2 -->
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Ni planlagte open source-værktøjer til kommunens hverdag. Udforsk Kommunesuitens vision for PDF, spørgeskema, tidsbestilling, fildeling, underskrift, arbejdsgange, webtilgængelighed, maskering og læring.">
+  <title>Kommunesuite — gør de små opgaver små igen</title>
+  <link rel="icon" href="assets/brand.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400..700&amp;family=Public+Sans:wght@400..700&amp;display=swap">
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="brand-logos.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#loesninger">Gå til løsningerne</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Kommunesuite — til toppen"><img src="assets/brand.svg" alt="" width="30" height="30"><span>kommune<span class="brand-suffix">suite</span></span></a>
+      <nav aria-label="Hovednavigation"><a href="#loesninger">Værktøjer</a><a href="#ideen">Sammenhængen</a><a href="#retning">Fælles retning</a><a href="#om-initiativet" class="about-nav">Om initiativet</a></nav>
+      <a class="header-source button button-outline" href="source.zip" aria-label="Hent hjemmesidens kildekode"><span class="source-full">Sidens kode</span><span class="source-compact">Kode</span><span aria-hidden="true">↓</span></a>
+      <button class="motion-toggle" id="motion-toggle" type="button" aria-label="Sæt animationer på pause" aria-pressed="false"><svg viewBox="0 0 20 20" aria-hidden="true" class="pause-symbol"><path d="M7 5v10M13 5v10"/></svg><svg viewBox="0 0 20 20" aria-hidden="true" class="play-symbol"><path d="M7 4l9 6-9 6z"/></svg><span id="motion-label">Pause animation</span></button>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero page-width" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Enkle værktøjer til kommunen</p>
+        <h1 id="hero-title">Gør de små opgaver <br>små igen.</h1>
+        <p class="hero-description">Ni enkle værktøjer til kommunens hverdag. Åben kode, fælles retning og plads til jeres egne behov.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#loesninger">Se de ni værktøjer</a><a class="button button-outline" href="#ideen">Sådan hænger de sammen</a></div>
+        <dl class="hero-facts"><div><dt>9</dt><dd>planlagte værktøjer</dd></div><div><dt>98</dt><dd>kommuner i fokus</dd></div><div><dt>EUPL 1.2</dt><dd>Åben kode. Gratis software. <br>Ingen medlemskrav.</dd></div></dl>
+      </div>
+      <div class="hero-art" aria-label="Udforsk Kommunesuitens ni planlagte værktøjer">
+        <div class="orbit-grid"><!-- ORBIT_APPS --></div>
+      </div>
+    </section>
+    <section id="loesninger" class="catalog page-width" aria-labelledby="catalog-title">
+      <div class="section-heading"><div><p class="eyebrow section-kicker">Produktfamilien</p><h2 id="catalog-title">Find dit næste hverdagsværktøj</h2><p>Ni værktøjer med hver sin opgave. Alle er planlagte løsninger, og funktionerne beskriver ambitionen.</p></div></div>
+      <div class="catalog-toolbar"><div class="filters" role="group" aria-label="Filtrér løsninger"><button type="button" data-filter="all" aria-pressed="true">Alle løsninger <span>9</span></button><button type="button" data-filter="dokumenter" aria-pressed="false">Dokumenter</button><button type="button" data-filter="arbejdsgange" aria-pressed="false">Arbejdsgange</button><button type="button" data-filter="indsigt" aria-pressed="false">Indsigt & læring</button></div><span class="catalog-count" id="catalog-count" role="status" aria-live="polite">Viser 9 løsninger</span></div>
+      <div class="product-grid" id="product-grid"><!-- PRODUCT_CARDS --></div>
+      <p class="catalog-note"><span class="note-dot"></span>Dette er en produktvision. Funktionerne beskriver ambitionen for de planlagte løsninger.</p>
+    </section>
+    <section id="ideen" class="connection-section" aria-labelledby="connection-title">
+      <div class="connection-inner page-width">
+        <div class="connection-copy"><p class="eyebrow section-kicker">02 / SAMMENHÆNGEN</p><h2 id="connection-title">Hver for sig nyttige. <br><span>Sammen stærkere.</span></h2><p>Et dokument behøver ikke stoppe ved download. Visionen er, at værktøjerne kan dele et fælles fundament og følge opgaven videre.</p><p class="connection-small">Kommunens eksisterende systemer beholder deres rolle. Suiten hjælper med arbejdet imellem dem.</p></div>
+        <div class="workflow-visual"><div class="workflow-label"><span class="note-dot"></span>ILLUSTRERET ARBEJDSGANG</div><div class="workflow-track">
+          <a class="workflow-node" href="#produkt/pdf"><img src="assets/pdf.svg" width="42" height="42" alt=""><small>Trin 1</small><h3>Saml dokumentet</h3><p>PDF-værksted skal samle bilag og gøre filen klar til næste skridt.</p></a>
+          <a class="workflow-node" href="#produkt/flow"><img src="assets/flow.svg" width="42" height="42" alt=""><small>Trin 2</small><h3>Få godkendelsen</h3><p>Arbejdsgange skal sende dokumentet videre til den rette ansvarlige.</p></a>
+          <a class="workflow-node" href="#produkt/sign"><img src="assets/sign.svg" width="42" height="42" alt=""><small>Trin 3</small><h3>Følg underskriften</h3><p>Underskriftsforløb skal holde styr på parter, rækkefølge og status.</p></a>
+        </div><div class="workflow-bottom"><span>Fra første fil til sidste trin</span><span aria-hidden="true">→</span></div></div>
+      </div>
+    </section>
+    <section id="retning" class="principles page-width" aria-labelledby="principles-title">
+      <div class="section-heading"><div><p class="eyebrow section-kicker">03 / FÆLLES RETNING</p><h2 id="principles-title">Åben kode. <br><span>Kommunal omtanke.</span></h2></div><p>Vi vil bygge noget, der kan deles, <br>forstås og vedligeholdes. <br>Også når behovene ændrer sig.</p></div>
+      <div class="principle-grid">
+        <article><span class="principle-symbol" aria-hidden="true">&lt;/&gt;</span><h3>Åben under EUPL 1.2</h3><p>Vores egen kode udgives under EUPL 1.2, så kommuner og udviklere kan undersøge, genbruge og bidrage til løsningerne.</p></article>
+        <article><span class="principle-symbol local-symbol" aria-hidden="true">◎</span><h3>Plads til lokale behov</h3><p>En fælles produktfamilie med lokal konfiguration og mulighed for at vælge en passende driftsmodel.</p></article>
+        <article><span class="principle-symbol" aria-hidden="true">↗</span><h3>En hverdag ad gangen</h3><p>Afgrænsede opgaver, konkrete afprøvninger og fælles forbedringer. Udvikling skal følge faktisk anvendelse.</p></article>
+      </div>
+      <div class="vision-banner"><div><span class="note-dot"></span><p>Ni værktøjer. Mange kommuner. <br><strong>Én ambition om en lettere hverdag.</strong></p></div><a class="button button-light" href="#loesninger">Tilbage til løsningerne <span aria-hidden="true">↑</span></a></div>
+    </section>
+    <section id="om-initiativet" class="initiative-section" aria-labelledby="initiative-title">
+      <div class="page-width">
+        <div class="section-heading"><div><p class="eyebrow section-kicker">04 / OM INITIATIVET</p><h2 id="initiative-title">Gratis værktøjer. <br><span>På egne vilkår.</span></h2></div><p>Små værktøjer skal være <br>tilgængelige for alle i det offentlige. <br>Med kommunernes hverdag som afsæt.</p></div>
+        <div class="initiative-promise"><div class="free-mark" aria-label="Nul kroner i softwarelicens"><strong>0<span>kr.</span></strong><small>I SOFTWARELICENS</small></div><div><h3>Fri adgang. Ingen betaling pr. bruger.</h3><p>Kommunesuite er et uafhængigt open source-initiativ. Software og kildekode skal være gratis at hente, bruge og videreudvikle under EUPL 1.2. Du skal hverken være medlem af OS2 eller en anden forening, købe et abonnement eller betale pr. licens for at få adgang til vores værktøjer.</p><p>Vi vil gøre de små, tilbagevendende opgaver lettere uden en ny licensregning hver gang. Løsningerne udvikles med kommunernes behov i centrum og skal være frit tilgængelige for alle.</p></div></div>
+        <div class="initiative-models" aria-label="Tre måder at bruge værktøjerne på">
+          <article><span class="model-number">01</span><h3>Hent en app</h3><p>Nogle værktøjer skal kunne hentes som selvstændige apps og bruges direkte på medarbejderens computer.</p><span class="model-label">Selvstændige værktøjer</span></article>
+          <article><span class="model-number">02</span><h3>Host selv</h3><p>Andre løsninger skal kunne køre i kommunens eget miljø med et enkelt Docker-setup og en tydelig vejledning.</p><span class="model-label">Eget miljø · Egen kontrol</span></article>
+          <article><span class="model-number">03</span><h3>Få hjælp til driften</h3><p>Et konsulenthus kan stå for hosting, opsætning, drift og support. Det er et frivilligt tilkøb; softwaren forbliver gratis.</p><span class="model-label">Valgfri hosting og support</span></article>
+        </div>
+        <div class="initiative-details">
+          <details><summary>Hvorfor et selvstændigt initiativ uden for OS2?</summary><p>Vi ønsker en enkel organisering omkring små hverdagsværktøjer med fri adgang, ingen medlemskrav og mulighed for at vælge sin egen driftspartner. Kommunesuite har derfor sin egen produktretning og udvikles som et selvstændigt initiativ.</p><p>OS2 offentliggør også open source-kode. Vores uafhængighed handler om, hvordan vi organiserer og tilbyder Kommunesuite. Den er ikke en forudsætning for at kunne udgive gratis software.</p><a href="https://os2.eu/" target="_blank" rel="noopener noreferrer">Læs om OS2 <span aria-hidden="true">↗</span></a></details>
+          <details><summary>Hvad betyder EUPL 1.2?</summary><p>Alle løsninger, vi selv udvikler til Kommunesuite, udgives under European Union Public Licence 1.2. Licensen giver adgang til at bruge, undersøge, ændre og dele koden på licensens vilkår. De relevante forpligtelser til at dele kildekode følger med ved videre distribution og brug som tjeneste.</p><p>Tredjepartskomponenter beholder deres egne licenser. Vi vurderer kompatibilitet, før de indgår i løsningerne.</p><a href="https://interoperable-europe.ec.europa.eu/collection/eupl/eupl-text-eupl-12" target="_blank" rel="noopener noreferrer">Læs den officielle EUPL 1.2 <span aria-hidden="true">↗</span></a></details>
+        </div>
+        <div class="founder-heading"><p class="eyebrow section-kicker">MENNESKENE BAG</p><h3>Et initiativ af Parthee og Bjørn.</h3><p>Kommunal erfaring, softwareudvikling og en fælles ambition om at gøre nyttige værktøjer frit tilgængelige.</p></div>
+        <div class="founder-grid">
+          <article class="founder-card"><div class="founder-intro"><img class="founder-portrait parthee-portrait" src="assets/parthee-vijayamohan.jpg" alt="Portræt af Parthee Vijayamohan" width="108" height="108" loading="lazy"><div><h4>Parthee Vijayamohan</h4><p>Grundlægger af AI Alliancen</p><span class="founder-role">AI Program Lead · Kommunal udvikling</span></div></div><p class="founder-bio">Parthee arbejder med praktisk AI, automatisering og genbrugelige løsninger i det offentlige. Som AI Program Lead i Kalundborg Kommune forbinder han teknisk udvikling med organisering og drift. Han har grundlagt AI Alliancen for at dele viden og erfaringer på tværs af organisationer.</p><div class="founder-footer"><a href="https://ai-alliancen.org/" target="_blank" rel="noopener noreferrer" aria-label="Besøg AI Alliancen" class="founder-logo-link"><svg class="alliance-logo" viewBox="-2 -4 130 49" width="140" height="49" role="img" aria-label="AI Alliancen"><text class="alliance-a" x="0" y="37">a</text><text class="alliance-i" x="15.53125" y="37">i</text><text class="alliance-name" x="31.5234375" y="37">alliancen</text></svg></a><a class="founder-link" href="https://ai-alliancen.org/medlemmer/parthee-vijayamohan" target="_blank" rel="noopener noreferrer">Læs profilen <span aria-hidden="true">↗</span></a></div></article>
+          <article class="founder-card"><div class="founder-intro"><img class="founder-portrait bjorn-portrait" src="assets/bjorn-skalkam.jpg" alt="Portræt af Bjørn Skalkam" width="108" height="108" loading="lazy"><div><h4>Bjørn Skalkam</h4><p>Medstifter af Komplai</p><span class="founder-role">Softwareingeniør · Udvikling og drift</span></div></div><p class="founder-bio">Bjørn er softwareingeniør og medstifter af Komplai. Han udvikler og implementerer løsninger til blandt andre kommuner, med erfaring i Python, TypeScript, React og Docker. Sammen med Parthee har han arbejdet med kommunale AI-værktøjer og den infrastruktur, der får dem til at fungere i praksis.</p><div class="founder-footer"><a href="https://komplai.dk/" target="_blank" rel="noopener noreferrer" aria-label="Besøg Komplai" class="founder-logo-link"><svg class="komplai-logo" viewBox="0 0 116 34" width="113" height="33" role="img" aria-label="Komplai"><text x="1" y="26">komplai<tspan>/</tspan></text></svg></a><a class="founder-link" href="https://komplai.dk/" target="_blank" rel="noopener noreferrer">Besøg Komplai <span aria-hidden="true">↗</span></a></div></article>
+        </div>
+        <p class="initiative-status"><span class="note-dot"></span>De ni værktøjer er en planlagt produktfamilie. Apps, Docker-pakker og kildekode offentliggøres, efterhånden som løsningerne bliver klar.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer page-width"><a class="brand" href="#top"><img src="assets/brand.svg" alt="" width="26" height="26"><span>kommune<span class="brand-suffix">suite</span></span></a><p>Et initiativ af Parthee Vijayamohan og Bjørn Skalkam.</p><div class="footer-links"><a href="#om-initiativet">Om initiativet</a><a href="LICENSE.txt">EUPL 1.2</a><a href="source.zip">Hent sidens kildekode</a></div></footer>
+  <dialog id="product-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description"><div class="dialog-shell"><button class="dialog-close" id="dialog-close" type="button" aria-label="Luk produktbeskrivelse"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M6 18L18 6"/></svg></button><div class="dialog-visual"><span class="dialog-index" id="dialog-index"></span><img id="dialog-icon" src="assets/pdf.svg" alt="" width="160" height="160"><span class="dialog-tagline" id="dialog-tagline"></span><span class="dialog-status"><span></span>Planlagt løsning</span></div><div class="dialog-content"><p class="eyebrow">KOMMUNESUITENS PRODUKTFAMILIE</p><h2 id="dialog-title" tabindex="-1"></h2><p class="dialog-description" id="dialog-description"></p><h3>Det skal værktøjet kunne</h3><ul id="dialog-features"></ul><div class="use-case"><p class="eyebrow">ET EKSEMPEL FRA HVERDAGEN</p><p id="dialog-example"></p></div><details><summary>Afgrænsning og sammenhæng</summary><p id="dialog-boundary"></p><p id="dialog-connections"></p></details><div class="dialog-nav"><button id="previous-product" type="button">← Forrige</button><span id="dialog-position"></span><button id="next-product" type="button">Næste →</button></div></div></div></dialog>
+  <script type="application/json" id="product-data"><!-- PRODUCT_DATA --></script>
+  <noscript><p class="noscript-note">Produktoversigten kan læses her. Aktivér JavaScript for filtre og uddybende produktvisninger.</p></noscript>
+</body>
+</html>
