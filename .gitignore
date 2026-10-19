@@ -7,3 +7,4 @@ __pycache__/
 *.pyc
 deployment-files.json
 vercel-deployment.json
+.gstack/

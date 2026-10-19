@@ -45,8 +45,13 @@ function displayProduct(index) {
   document.getElementById('dialog-title').textContent = product.name;
   document.getElementById('dialog-description').textContent = product.details;
   document.getElementById('dialog-tagline').textContent = product.tagline;
-  document.getElementById('dialog-index').textContent = `0${activeProduct + 1} / 09`;
+  document.getElementById('dialog-index').textContent = `${String(activeProduct + 1).padStart(2, '0')} / ${String(products.length).padStart(2, '0')}`;
   document.getElementById('dialog-position').textContent = `${activeProduct + 1} af ${products.length}`;
+  document.getElementById('dialog-status-text').textContent = product.status === 'beta' ? 'Beta · privat Mac-RC1' : 'Planlagt';
+  document.getElementById('dialog-feature-heading').textContent = product.status === 'beta' ? 'Funktioner i testudgaven' : 'Foreslåede funktioner';
+  const comparison = document.getElementById('dialog-comparison');
+  comparison.textContent = product.comparison || '';
+  comparison.hidden = !product.comparison;
   const features = document.getElementById('dialog-features');
   features.replaceChildren(...product.features.map(text => {
     const li = document.createElement('li');
